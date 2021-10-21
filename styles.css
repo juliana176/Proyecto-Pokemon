@@ -1,0 +1,100 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+ 
+  .navbar {
+  background-color: #0d0c0fd7!important;
+  
+  }
+
+  label { display: inline-block; margin: 1rem; }
+  .navbar-brand {
+  color: #3d7dca!important;
+  justify-content: center;
+  }
+  .navbar-logo {
+  width: 42px;
+  height: 42px;
+  margin-left: 1rem;
+  }
+  .modal-header {
+  border-bottom: 1px solid black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  }
+  .modal-content {
+  background-color: #9b999c!important;
+  border: white solid 6px!important;
+  text-align: center;
+  }
+
+ 
+
+ 
+
+
+
+
+ 
+
+ #search-button {
+   background-color: #db0606;
+   border: black solid 2px;
+   color: white;
+   padding: 4px 25px;
+ 
+ }
+
+
+
+
+
+
+
+
+.modal-aparecer {
+  animation: aparecer 1s;
+}
+
+.modal-desdeArriba {
+  animation: desdeArriba 1s;
+}
+
+.modal-desdeAbajo {
+  animation: desdeAbajo 1s;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes desdeArriba {
+  from {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes desdeAbajo {
+  from {
+    transform: translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
